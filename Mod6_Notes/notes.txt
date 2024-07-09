@@ -18,7 +18,7 @@ CONTAINERS
 
 VMs vs Containers
 
-    virtual machines are basically virtualizing a OS basically allowing multiple OS to run on one computer
+    virtual machines are basically virtualizing an OS basically allowing multiple OS to run on one computer
 
     -problems with VM
         - each BM needs a full-blown OS
@@ -33,3 +33,55 @@ VMs vs Containers
 
 
 We basically use docker as a server in this course --- don't go much further than that
+
+Kernel - core of the OS
+
+Everything OS has its own kernels and each oif these kernels have different APIs
+
+This is why we cannot use windows containers oin a MAC container
+
+Docker uses a lightweight VM
+
+A Docker images includes everything for an application to run, files configuration settings ETC.
+
+Once we have an image we can start that container from the image
+
+a container is LIKE a VM because it is an isolated environment that we can execute applications in
+- Whatever happens in each container are invisible to other containers
+
+Just using docker for databases and as a server in this course, use docker as a server to run our databases
+
+
+DEV WORKFLOW
+
+A Docker file is a plain text file that includes instructions for docker to package up the application into an image
+these images include everything that we need for our application to run such as
+    - OS
+    - Run time environment (Node or JDK)
+    - any application files
+    - third party library's like spring or react
+    - environment variables
+
+With docker, we don't have to use or maintain release documents that need to be precisely followed.
+
+Docker files start with FROM, telling us what image the file is from
+
+COPY -> Where we need to go to copy the source code
+
+ENV which would be our environment variables
+
+this is our configurations and it is automatiable
+
+takes a whole team up and running in just a couple of minutes and no intimate knowledge of how our database works
+
+ENVIRONMENTS
+
+    deployment = hosting it on a server so that others can connect to it, it is not useful just local
+
+    dev environment = this is our local machine
+
+    testing environment = this is where our app is tested
+
+    staging = setting up our app for production - could exist for only a few seconds
+
+    production = launching to our users
