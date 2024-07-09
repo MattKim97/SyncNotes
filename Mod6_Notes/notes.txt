@@ -1,3 +1,35 @@
 Notes for Thursday 7/9/2024
 
 Covering Docker, Containers , Imagers, and MySQL
+
+DOCKER
+
+    a platform for building shipping and running applications in a consistent manner
+    provides the dependencies that an application needs
+    docker compose up -> automatically updated and downloaded everything in the container
+    good thing about docker can immediately remove all things related to the container
+    no need to uninstall everything after using the application
+
+CONTAINERS
+
+    standardized containers are used in-order to keep everything in a standardized and isolated environment
+    make sure everything works across different computers
+    containers keep everything isolated from our own underlying systems
+
+VMs vs Containers
+
+    virtual machines are basically virtualizing a OS basically allowing multiple OS to run on one computer
+
+    -problems with VM
+        - each BM needs a full-blown OS
+        - very slow to start
+        - very very very resource intensive
+
+    - benefits of containers
+        - needs less hardware resources
+        - allows running of multiple applications in isolation
+        - start quickly
+        - use the host machines OS - no need to download multiple OS
+
+
+We basically use docker as a server in this course --- don't go much further than that
