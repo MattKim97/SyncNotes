@@ -78,10 +78,17 @@ ENVIRONMENTS
 
     deployment = hosting it on a server so that others can connect to it, it is not useful just local
 
-    dev environment = this is our local machine
+    dev environment = this is our local machine -- dev -> named branch (named feature)
 
-    testing environment = this is where our app is tested
+    testing environment = this is where our app is tested -- testing branch
 
-    staging = setting up our app for production - could exist for only a few seconds
+    staging = setting up our app for production - could exist for only a few seconds -- exists before merging into main ( 2 seconds when you click on merge into main)
 
-    production = launching to our users
+    production = launching to our users -- main
+
+All this is possible because of containers, we don't know what is in them, but we just know we can ship them around.
+
+DOCKER COMMANDS
+    - docker container prune (delete all containers not running)
+    - no way to recover when removing containers
+    - only remove if you want to completely remove them
