@@ -92,3 +92,19 @@ DOCKER COMMANDS
     - docker container prune (delete all containers not running)
     - no way to recover when removing containers
     - only remove if you want to completely remove them
+
+
+
+SOME SQL NOTES
+ - 1 to 1 table are usually larger tables that are broke apart into smaller tables
+ - inner join only show matching rows, combines the matching rows
+ - aggregating is the act of taking many values and then reducing them down to a single value
+ - count(*) * only allowed for count aggregates
+ - any aggregate query can make a where clause, records are filtered before aggregate is applied
+ - always be consistent with naming between tables and models
+ - Natural Key
+    - a natural key naturally occurs in the data
+    - is unique
+
+ - Surrogate key
+    - not naturally occurring within the data, something that we create
