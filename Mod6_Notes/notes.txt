@@ -108,3 +108,18 @@ SOME SQL NOTES
 
  - Surrogate key
     - not naturally occurring within the data, something that we create
+
+
+DATABASE DESIGN NOTES
+    - will require planning and takes a lot of time
+    - well-designed
+        - easily extended
+        - query easily
+    - poorly designed
+        - eventually will prevent extension
+        - a lot of maintenance
+    - Systematic approach
+    1. understand the business requirements ( look @ existing forms if we don't know existing DB)
+    2. build conceptual model of the business representation of these concepts
+    3. build logical model -> all the tables and columns
+    4. build physical model -> the implementation of the logical model
