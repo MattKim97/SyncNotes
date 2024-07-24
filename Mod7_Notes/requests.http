@@ -174,3 +174,141 @@ Host: localhost:8080
 Content-Type: application/json 
 
 { "petId": 15, "name": "Midge", "type": "Pug" }
+
+
+###
+
+###
+PUT /sheep HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+###
+GET  /sheep HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+###
+PUT /sheep/10 HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+###
+POST  /sheep HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+{ "amount": 7 }
+
+###
+DELETE   /sheep HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+###
+GET  /todos HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+###
+PUT /todos HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+[
+  "Buy groceries",
+  "Call John",
+  "Finish homework"
+]
+
+###
+PUT /todos/Go to gym HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+
+###
+DELETE  /todos/1 HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+### unhappy
+DELETE  /todos/300 HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+
+###
+POST  /todos HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json 
+
+[
+  "Updated 1",
+   "Updated 2",
+    "Updated 3",
+     "Updated 4"
+]
+
+###
+
+GET /pets HTTP/1.1 
+Host: localhost:8080
+
+
+###
+POST /pets HTTP/1.1 
+Host: localhost:8080 
+Content-Type: application/json
+
+{ "name": "Mo", "type": "Ostrich" }
+
+
+###
+
+GET /pets/7 HTTP/1.1 
+Host: localhost:8080
+
+
+
+###
+PUT http://localhost:8080/pets/2 HTTP/1.1 
+Content-Type: application/json 
+
+{ "petId": 2, "name": "Serge", "type": "Snake" }
+
+
+###
+PUT http://localhost:8080/pets/2 HTTP/1.1 
+Content-Type: application/json Origin: http://localhost:3000 
+
+{ "petId": 2, "name": "Serge", "type": "Snake" }
+
+###
+GET /panels HTTP/1.1 
+Host: localhost:8080
+
+###
+GET /panels/2 HTTP/1.1 
+Host: localhost:8080
+
+
+###
+POST  /panels HTTP/1.1 
+Host: localhost:8080
+Content-Type: application/json 
+
+{"section": "New Section", "row": 3, "column": 4, "installation_year": 2020, "material":"MULTICRYSTALLINE_SILICON","tracking":false }
+
+
+###
+PUT   /panels/4 HTTP/1.1 
+Host: localhost:8080
+Content-Type: application/json 
+
+{"section": "New Section", "row": 3, "column": 4, "installation_year": 2021, "material":"MULTICRYSTALLINE_SILICON","tracking":false }
+
+
+###
+DELETE /panels/4 HTTP/1.1 
+Host: localhost:8080
