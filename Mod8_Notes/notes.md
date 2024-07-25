@@ -35,4 +35,9 @@
 
 ### find() method
     - similar to filter returns statement that is true
-    = does not return array returns a single element
+    - does not return array returns a single element
+
+
+### fetch requests
+    - create a init and then define content type
+    - use JS promises to resolve and get data back from server
